@@ -1,0 +1,103 @@
+import java.util.Date;
+
+public class Assignment {
+    private final int id;
+    private String assignedBy;
+    private String assignedTo;
+    private String description;
+    private Date deadline;
+
+    public Assignment(int id, String assignedBy, String assignedTo, String description,Date deadline) {
+        this.id = id;
+        this.assignedBy = assignedBy;
+        this.assignedTo = assignedTo;
+        this.description = description;
+        this.deadline = deadline;
+    }
+
+    //getters
+    public long getId() {
+        return id;
+    }
+    public String getAssignedBy() {
+        return assignedBy;
+    }
+    public String getAssignedTo() {
+        return assignedTo;
+    }
+    public Date getDeadline() {
+        return deadline;
+    }
+    public String getDescription() {
+        return description;
+    }
+
+    //setters
+    public void setAssignedBy(String assignedBy){
+        this.assignedBy = assignedBy;
+    }
+    public void setAssignedTo(String assignedTo){
+        this.assignedTo = assignedTo;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public void setDeadline(Date deadline){
+        this.deadline = deadline;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: "+this.id+", assigned by: "+this.assignedBy+", assigned to: "+this.assignedTo+
+                ", DeadLine: "+this.deadline+", description: "+this.description;
+    }
+
+}
+
+class AssignmentBuilder {
+
+    private final int id;
+    private String assignedBy;
+    private String assignedTo;
+    private String description;
+    private Date deadline;
+
+    public AssignmentBuilder(int id){
+        this.id = id;
+    }
+    public AssignmentBuilder(int id, String assignedBy, String assignedTo, String description,Date deadline) {
+        this.id = id;
+        this.assignedBy = assignedBy;
+        this.assignedTo = assignedTo;
+        this.description = description;
+        this.deadline = deadline;
+    }
+    public AssignmentBuilder setAssignedBy(String assignedBy){
+        this.assignedBy = assignedBy;
+        return this;
+    }
+    public AssignmentBuilder setAssignedTo(String assignedTo){
+        this.assignedTo = assignedTo;
+        return this;
+    }
+    public AssignmentBuilder setDescription(String description) {
+        this.description = description;
+        return this;
+    }
+    public AssignmentBuilder setDeadline(Date deadline){
+        this.deadline = deadline;
+        return this;
+    }
+    public Assignment build() {
+        return new Assignment(id,assignedBy,assignedTo,description,deadline);
+    }
+}
+class AssignmentMain {
+    public static void main(String[] args) {
+        Date date = new Date();
+        Assignment assignment = new AssignmentBuilder(1).setAssignedBy("Ahmad Alaziz").setAssignedTo("James Cordon")
+                .setDescription("bla bla bla bla").setDeadline(date).build();
+        System.out.println(assignment);
+    }
+
+}
