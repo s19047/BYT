@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/refactoring-exercises/exercise-01/exercise-01.iml" filepath="$PROJECT_DIR$/refactoring-exercises/exercise-01/exercise-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refactoring-exercises/exercise-02/exercise-02.iml" filepath="$PROJECT_DIR$/refactoring-exercises/exercise-02/exercise-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refactoring-exercises/exercise-03/exercise-03.iml" filepath="$PROJECT_DIR$/refactoring-exercises/exercise-03/exercise-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refactoring-exercises/exercise-04/exercise-04.iml" filepath="$PROJECT_DIR$/refactoring-exercises/exercise-04/exercise-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refactoring-exercises/exercise-05/exercise-05.iml" filepath="$PROJECT_DIR$/refactoring-exercises/exercise-05/exercise-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refactoring-exercises/exercise-06/exercise-06.iml" filepath="$PROJECT_DIR$/refactoring-exercises/exercise-06/exercise-06.iml" />
+    </modules>
+  </component>
+</project>
